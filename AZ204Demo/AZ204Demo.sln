@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo", "AZ204Demo\AZ204Demo.csproj", "{4BF4D2EC-5BEC-4749-8E4F-7B4A4BEA0539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo", "AZ204Demo\AZ204Demo.csproj", "{4BF4D2EC-5BEC-4749-8E4F-7B4A4BEA0539}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.CosmosDbOutput", "AZ204Demo.CosmosDbOutput\AZ204Demo.CosmosDbOutput.csproj", "{D83CB919-DFE9-4C3F-BC55-F8AAC2DF8C15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.CosmosDbOutput", "AZ204Demo.CosmosDbOutput\AZ204Demo.CosmosDbOutput.csproj", "{D83CB919-DFE9-4C3F-BC55-F8AAC2DF8C15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.MessageGenerator", "AZ204Demo.MessageGenerator\AZ204Demo.MessageGenerator.csproj", "{2ADB2C66-777F-496D-88D3-5C92283C9E21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.MessageGenerator", "AZ204Demo.MessageGenerator\AZ204Demo.MessageGenerator.csproj", "{2ADB2C66-777F-496D-88D3-5C92283C9E21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.Scaling", "AZ204Demo.Scaling\AZ204Demo.Scaling.csproj", "{FD51192C-9FC0-4110-9DE5-CC350B508EF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.Scaling", "AZ204Demo.Scaling\AZ204Demo.Scaling.csproj", "{FD51192C-9FC0-4110-9DE5-CC350B508EF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.BlobOutput", "AZ204Demo.BlobOutput\AZ204Demo.BlobOutput.csproj", "{2A53F5E9-05BD-474A-9D5D-9B47C95CC914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.BlobOutput", "AZ204Demo.BlobOutput\AZ204Demo.BlobOutput.csproj", "{2A53F5E9-05BD-474A-9D5D-9B47C95CC914}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.Configuration", "AZ204Demo.Configuration\AZ204Demo.Configuration.csproj", "{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2A53F5E9-05BD-474A-9D5D-9B47C95CC914}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A53F5E9-05BD-474A-9D5D-9B47C95CC914}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A53F5E9-05BD-474A-9D5D-9B47C95CC914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

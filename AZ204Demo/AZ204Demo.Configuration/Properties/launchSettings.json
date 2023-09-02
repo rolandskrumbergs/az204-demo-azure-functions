@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "AZ204Demo.Configuration": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7066",
+      "launchBrowser": false
+    }
+  }
+}

@@ -1,5 +1,7 @@
 using System.Net;
 using System.Text.Json;
+using Azure.Identity;
+using Azure.Storage.Blobs;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
@@ -21,6 +23,7 @@ namespace AZ204Demo.BlobOutput
             using StreamReader streamReader = new(req.Body);
             var requestBody = await streamReader.ReadToEndAsync();
 
+            // THIS IS BUSINESS LOGIC
             var order = JsonSerializer.Deserialize<Order>(requestBody);
             order.id = Guid.NewGuid();
             order.Created = DateTime.Now;
