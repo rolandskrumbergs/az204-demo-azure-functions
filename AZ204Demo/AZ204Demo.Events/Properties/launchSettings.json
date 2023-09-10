@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "AZ204Demo.Events": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7235",
+      "launchBrowser": false
+    }
+  }
+}
