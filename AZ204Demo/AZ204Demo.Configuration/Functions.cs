@@ -58,7 +58,7 @@ namespace AZ204Demo.Configuration
         [Function("GetBlobFromConnectionString")]
         public async Task<HttpResponseData> GetBlobFromConnectionString([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
         {
-            BlobContainerClient containerClient = await _blobClientWithUrl.CreateBlobContainerAsync("");
+            BlobContainerClient containerClient = _blobClientWithConnectionString.GetBlobContainerClient("");
             BlobClient blobClient = containerClient.GetBlobClient("");
 
             BlobDownloadResult downloadResult = await blobClient.DownloadContentAsync();
@@ -75,7 +75,7 @@ namespace AZ204Demo.Configuration
         [Function("GetBlobFromUrl")]
         public async Task<HttpResponseData> GetBlobFromUrl([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
         {
-            BlobContainerClient containerClient = await _blobClientWithConnectionString.CreateBlobContainerAsync("");
+            BlobContainerClient containerClient = _blobClientWithUrl.GetBlobContainerClient("");
             BlobClient blobClient = containerClient.GetBlobClient("");
 
             BlobDownloadResult downloadResult = await blobClient.DownloadContentAsync();
