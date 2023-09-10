@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.Scaling", "AZ204D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.BlobOutput", "AZ204Demo.BlobOutput\AZ204Demo.BlobOutput.csproj", "{2A53F5E9-05BD-474A-9D5D-9B47C95CC914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.Configuration", "AZ204Demo.Configuration\AZ204Demo.Configuration.csproj", "{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.Configuration", "AZ204Demo.Configuration\AZ204Demo.Configuration.csproj", "{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.WebAPI", "AZ204Demo.WebAPI\AZ204Demo.WebAPI.csproj", "{68EFB6CD-3C90-48CD-AA89-54AFCB3AD994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EFB6CD-3C90-48CD-AA89-54AFCB3AD994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EFB6CD-3C90-48CD-AA89-54AFCB3AD994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EFB6CD-3C90-48CD-AA89-54AFCB3AD994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EFB6CD-3C90-48CD-AA89-54AFCB3AD994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

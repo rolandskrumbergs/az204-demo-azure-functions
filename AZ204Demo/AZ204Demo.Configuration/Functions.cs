@@ -1,6 +1,3 @@
-using System;
-using System.Net;
-using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
@@ -8,7 +5,7 @@ using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using System.Net;
 
 namespace AZ204Demo.Configuration
 {
@@ -17,14 +14,17 @@ namespace AZ204Demo.Configuration
         private readonly SecretClient _secretClient;
         private readonly BlobServiceClient _blobClientWithConnectionString;
         private readonly BlobServiceClient _blobClientWithUrl;
+        private readonly IConfiguration _configuration;
 
         public Functions(
+            IConfiguration configuration,
             SecretClient secretClient,
             IAzureClientFactory<BlobServiceClient> clientFactory)
         {
             _secretClient = secretClient;
             _blobClientWithConnectionString = clientFactory.CreateClient("BlobStorageWithConnectionString");
             _blobClientWithUrl = clientFactory.CreateClient("BlobStorageWithUrl");
+            _configuration = configuration;
         }
 
         [Function("GetSecret")]
@@ -36,6 +36,21 @@ namespace AZ204Demo.Configuration
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
             response.WriteString(secret.Value.Value);
+
+            return response;
+        }
+
+        [Function("GetConfiguration")]
+        public async Task<HttpResponseData> GetConfiguration([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
+        {
+            var configurationInAppConfig = _configuration[""];
+            var configurationInAppSettings = _configuration[""];
+            var configurationInKeyVault = _configuration[""];
+
+            var response = req.CreateResponse(HttpStatusCode.OK);
+            response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
+
+            response.WriteString($"{configurationInAppConfig};{configurationInAppSettings};{configurationInKeyVault}");
 
             return response;
         }
