@@ -15,9 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.BlobOutput", "AZ2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.Configuration", "AZ204Demo.Configuration\AZ204Demo.Configuration.csproj", "{396E165F-D4A3-4FB2-B6BF-8869A77D1E81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.WebAPI", "AZ204Demo.WebAPI\AZ204Demo.WebAPI.csproj", "{68EFB6CD-3C90-48CD-AA89-54AFCB3AD994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.WebAPI", "AZ204Demo.WebAPI\AZ204Demo.WebAPI.csproj", "{68EFB6CD-3C90-48CD-AA89-54AFCB3AD994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.Events", "AZ204Demo.Events\AZ204Demo.Events.csproj", "{0C0AFDCE-EB57-46B6-9CE5-8AF949D3A32C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.Events", "AZ204Demo.Events\AZ204Demo.Events.csproj", "{0C0AFDCE-EB57-46B6-9CE5-8AF949D3A32C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204Demo.EventHubProcessor", "AZ204Demo.EventHubProcessor\AZ204Demo.EventHubProcessor.csproj", "{611F68B3-C625-4488-8331-ECBB53376032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.StorageQueueMessageSender", "AZ204Demo.StorageQueueMessageSender\AZ204Demo.StorageQueueMessageSender.csproj", "{3120A43F-F37D-4E6D-A0B8-04CAAB6ADDB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.StorageQueueMessageReceiver", "AZ204Demo.StorageQueueMessageReceiver\AZ204Demo.StorageQueueMessageReceiver.csproj", "{1CC9059A-B240-411C-AC20-6B225B96666A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.ServiceBusMessageSender", "AZ204Demo.ServiceBusMessageSender\AZ204Demo.ServiceBusMessageSender.csproj", "{24CF18E9-30AA-41C4-A5EA-3993E01AE5E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.ServiceBusMessageReceiver", "AZ204Demo.ServiceBusMessageReceiver\AZ204Demo.ServiceBusMessageReceiver.csproj", "{7F2F415D-B132-490E-8F5C-A6998A24E026}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +67,26 @@ Global
 		{0C0AFDCE-EB57-46B6-9CE5-8AF949D3A32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C0AFDCE-EB57-46B6-9CE5-8AF949D3A32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C0AFDCE-EB57-46B6-9CE5-8AF949D3A32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611F68B3-C625-4488-8331-ECBB53376032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611F68B3-C625-4488-8331-ECBB53376032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611F68B3-C625-4488-8331-ECBB53376032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611F68B3-C625-4488-8331-ECBB53376032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3120A43F-F37D-4E6D-A0B8-04CAAB6ADDB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3120A43F-F37D-4E6D-A0B8-04CAAB6ADDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3120A43F-F37D-4E6D-A0B8-04CAAB6ADDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3120A43F-F37D-4E6D-A0B8-04CAAB6ADDB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC9059A-B240-411C-AC20-6B225B96666A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC9059A-B240-411C-AC20-6B225B96666A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC9059A-B240-411C-AC20-6B225B96666A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC9059A-B240-411C-AC20-6B225B96666A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CF18E9-30AA-41C4-A5EA-3993E01AE5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CF18E9-30AA-41C4-A5EA-3993E01AE5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CF18E9-30AA-41C4-A5EA-3993E01AE5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CF18E9-30AA-41C4-A5EA-3993E01AE5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F2F415D-B132-490E-8F5C-A6998A24E026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F2F415D-B132-490E-8F5C-A6998A24E026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F2F415D-B132-490E-8F5C-A6998A24E026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F2F415D-B132-490E-8F5C-A6998A24E026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
