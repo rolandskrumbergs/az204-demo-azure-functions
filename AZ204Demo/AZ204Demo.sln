@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.ServiceBusMessage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.ServiceBusMessageReceiver", "AZ204Demo.ServiceBusMessageReceiver\AZ204Demo.ServiceBusMessageReceiver.csproj", "{7F2F415D-B132-490E-8F5C-A6998A24E026}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AZ204Demo.WebApp", "AZ204Demo.WebApp\AZ204Demo.WebApp.csproj", "{88310FE3-9CE7-40CA-B98A-D982CC72C205}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{7F2F415D-B132-490E-8F5C-A6998A24E026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F2F415D-B132-490E-8F5C-A6998A24E026}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F2F415D-B132-490E-8F5C-A6998A24E026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88310FE3-9CE7-40CA-B98A-D982CC72C205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88310FE3-9CE7-40CA-B98A-D982CC72C205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88310FE3-9CE7-40CA-B98A-D982CC72C205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88310FE3-9CE7-40CA-B98A-D982CC72C205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
